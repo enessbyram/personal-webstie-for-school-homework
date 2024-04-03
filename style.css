@@ -351,4 +351,7 @@ button {
     body {
         overflow-x: hidden;
     }
+    .card {
+        width: 250px;
+    }
 }
