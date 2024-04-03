@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    height: auto;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 25%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+main {
+    width: 75%;
+    background-color: #282c28;
+    height: 100%;
+}
+
+#photo {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo img {
+    margin: 20px 0;
+}
+
+#photo h3{
+    font-size: 30px;
+}
+
+#photo p {
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+}
+
+nav ul li {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #282c28;
+    font-size: 20px;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#header {
+    width: 100%;
+    height: 350px;
+    background: url("universe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home {
+    width: 75%;
+    height: 250px;
+    margin: 30px 40px;
+    transition: 0.3s all ease;
+}
+
+#home h2 {
+    font-size: 30px;
+    color: #ccc;
+    margin: 15px;
+}
+
+#home p {
+    color: #ccc;
+    margin: 15px;
+}
+
+#project {
+    width: 100%;
+    height: 850px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    transition: 0.3s all ease;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    border: 1px solid;
+    margin: 10px;
+    text-align: center;
+}
+
+.foto {
+    width: 100%;
+    height: 75%;
+}
+
+.aciklama {
+    margin: 20px;
+}
+
+.aciklama h3 {
+    font-size: 25px;
+    color: #ccc;
+}
+
+#projects {
+    border-top: 1px solid #ccc;
+    transition: all ease 0.3s;
+}
+
+#projects h1 {
+    color: #ccc;
+    margin: 55px 0 10px 55px;
+    font-size: 25px;
+}    
+
+#contact {
+    width: 100%;
+    transition: all 0.3s ease;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+}
+
+.element {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.element label {
+    font-size: 16px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.element input {
+    padding: 8px 5px;
+    border: none;
+    outline: none;
+    background-color: #282c28;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.element textarea {
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+    background-color: #282c28;
+    color: #ccc;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    height: 150px;
+}
+
+#contact h3 {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 50%;
+    padding: 10px 40px;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ccc;
+    background-color: #282c28;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 50px;
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    color: #222;
+    left: 10%;
+}
+
+@media screen and (max-width: 1550px) {
+    #home {
+        height: 250px;
+    }
+    #home h2 {
+        font-size: 25px;
+    }
+    #home p {
+        font-size: 14px;
+    }
+    #project {
+        grid-template-columns: auto auto;
+    }
+    #projects {
+        height: 1300px;
+    }
+    #projects h1 {
+        font-size: 25px;
+        margin: 55px 0 0 55px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    .aciklama h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #home {
+        height: 230px;
+    }
+    #home h2 {
+        font-size: 22px;
+    }
+    #home p {
+        font-size: 12px;
+    }
+    #project {
+        grid-template-columns: auto auto;
+    }
+    #projects {
+        height: 1300px;
+    }
+    #projects h1 {
+        font-size: 22px;
+        margin: 55px 0 0 55px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    .aciklama h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        width: 100%;
+        display: flex ;
+        justify-content: center;
+    }
+    nav {
+        display: none;
+    }
+    svg {
+        display: none
+    }
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #project {
+        grid-template-columns: auto;
+    }
+    #projects {
+        height: 2370px;
+    }
+    #home {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    #home {
+        height: auto;
+    }
+    form {
+        width: 300px;
+    }
+    .element input {
+        width: 280px;
+    }
+    .element textarea {
+        width: 280px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
